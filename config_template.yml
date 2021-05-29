@@ -1,0 +1,11 @@
+database:
+  username: XXX
+  password: XXX
+  databaseName: XXX
+  host: XXX
+  port: XXX
+  measurementsTableName: XXX
+  sensorId: XXX
+
+tomorrow_io:
+  apiKey: XXX
