@@ -9,3 +9,5 @@ database:
 
 tomorrow_io:
   apiKey: XXX
+  latitude: XXX
+  longitude: XXX

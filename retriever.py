@@ -90,13 +90,13 @@ def validate_windDirection(windDirection):
     return True
 
 
-def retrieve_weather_data(apiKey):
+def retrieve_weather_data(config):
     # Data retrieving
-    payload = {'location': '50.939282, 18.277793',
+    payload = {'location': str(config['latitude']) + ', ' + str(config['longitude']),
                'fields': 'temperature,weatherCode,windSpeed,windDirection',
                'timesteps': 'current',
                'units': 'metric',
-               'apikey': apiKey,
+               'apikey': config['apiKey'],
                }
 
     r = requests.get('https://api.tomorrow.io/v4/timelines', params=payload)

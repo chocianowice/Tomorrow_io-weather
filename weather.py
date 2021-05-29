@@ -11,7 +11,7 @@ config = yaml.safe_load(open(root_dir + "/config.yml"))
 
 
 temperature, weatherCode, windSpeed, windDirection = retriever.retrieve_weather_data(
-    config['tomorrow_io']['apiKey'])
+    config['tomorrow_io'])
 
 
 exporter.export_to_db(config['database'],
